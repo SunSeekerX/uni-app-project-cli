@@ -44,3 +44,7 @@ unpackage/resources/
 unpackage/cache/
 nativeplugins/*.zip
 unpackage/dist/
+
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
