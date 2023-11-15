@@ -37,14 +37,13 @@ pnpm-debug.log*
 !.yarn/sdks
 !.yarn/versions
 
-# 项目相关
+# App
+yarn.lock
+package-lock.json
 unpackage/release/
 unpackage/debug/
 unpackage/resources/
 unpackage/cache/
 nativeplugins/*.zip
 unpackage/dist/
-
-pnpm-lock.yaml
-yarn.lock
-package-lock.json
+auto-imports.d.ts
