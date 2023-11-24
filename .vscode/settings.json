@@ -1,4 +1,17 @@
 {
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    // 文件保存时开启stylelint自动修复程序
+    "source.fixAll.stylelint": true
+  },
+  // 防止编辑器内置linter与插件冲突设置
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  // 启用stylelint插件
+  "stylelint.enable": true,
+  "stylelint.config": null,
   "cSpell.words": [
     "alipay",
     "antdocs",
