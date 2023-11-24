@@ -2,8 +2,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    // 文件保存时开启stylelint自动修复程序
-    "source.fixAll.stylelint": true
+    "source.fixAll.stylelint": "explicit"
   },
   // 防止编辑器内置linter与插件冲突设置
   "css.validate": false,
