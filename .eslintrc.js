@@ -51,5 +51,6 @@ module.exports = {
         math: 'always',
       },
     ],
+    'no-async-promise-executor': 0,
   },
 }

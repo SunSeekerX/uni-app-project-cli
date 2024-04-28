@@ -3,14 +3,12 @@
     "baseUrl": ".",
     "jsx": "preserve",
     "paths": {
-      "@/*": ["src/*"],
-      "@root/*": ["./*"]
+      "@/*": ["src/*"]
     },
     "allowJs": true,
-    "types": [
-      "@dcloudio/types",
-      "miniprogram-api-typings",
-      "mini-types"
-    ]
-  }
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["@dcloudio/types"]
+  },
+  "exclude": ["node_modules", "dist"]
 }

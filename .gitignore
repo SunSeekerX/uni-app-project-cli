@@ -38,8 +38,6 @@ pnpm-debug.log*
 !.yarn/versions
 
 # App
-yarn.lock
-package-lock.json
 unpackage/release/
 unpackage/debug/
 unpackage/resources/
@@ -47,3 +45,6 @@ unpackage/cache/
 nativeplugins/*.zip
 unpackage/dist/
 auto-imports.d.ts
+pnpm-lock.yaml
+yarn.lock
+package-lock.json

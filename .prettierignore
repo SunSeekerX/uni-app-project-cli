@@ -9,8 +9,11 @@ src/unpackage/
 # 忽略静态文件
 src/static/
 # 忽略第三方库文件
-src/utils/libs/
+src/god/libs/
 # uni_modules
 uni_modules
-# 项目相关
+
+# App
 .npmrc
+shims-uni.d.ts
+shims-vue.d.ts

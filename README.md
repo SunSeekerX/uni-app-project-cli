@@ -1,5 +1,11 @@
 # uni-app-project-cli 技术中台
 
+# **⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️**
+
+# **不要从插件市场导入该项目模板，插件市场上传的项目（.zip 格式）过程中去除了插件包内以 `.` 开头的文件导致项目文件丢失，不清楚这么做的目的。需要的请到 github 下载项目！！！**
+
+# **⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️**
+
 vue2 + vuex + eslint + prettier + stylelint + lint-staged + husky
 
 - 项目地址: [Github](https://github.com/SunSeekerX/uni-app-project-cli)

@@ -4,7 +4,7 @@
     <view>
       <text class="title">{{ title }}</text>
     </view>
-    <u-button @tap="onTestRequest" type="primary" text="测试请求" />
+    <u-button type="primary" text="测试请求" @tap="onTestRequest" />
     <view>
       <text class="title">{{ res }}</text>
     </view>
@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import * as god from '@/god'
+
 export default {
   name: 'PageHome',
   data() {
@@ -23,12 +25,13 @@ export default {
   onLoad() {},
   methods: {
     async onTestRequest() {
-      const res = await this.$api.Express.get()
+      const res = await god.api.get()
+      // const res = await this.$api.Express.get()
       if (res.success) {
         console.log(res)
         this.res = res
       } else {
-        this.$utools.toast(res.msg)
+        god.uniapp.toast(res.msg)
       }
     },
   },
