@@ -17,7 +17,7 @@ module.exports = {
     },
   ],
   rules: {
-    // 'scss/at-import-partial-extension': 'always',
+    'color-function-notation': 'legacy',
     'no-descending-specificity': null,
     'selector-class-pattern': null,
     // uni-ap 特有的 rpx upx 单位
@@ -60,7 +60,7 @@ module.exports = {
     // scss @ 规则
     'at-rule-no-unknown': null,
     // 这个是不然把类似 “rgba(25, 24, 30, 1)” 格式化成 "rgb(25 24 30 / 100%)" 这种形式 sass 还不支持这种语法
-    'color-function-notation': null,
+    // 'color-function-notation': null,
     // 禁止无效的十六进制颜色
     'color-no-invalid-hex': true,
     // 禁用类似直接使用 unquote 不行 而要改为 string.unquote 这种的错误

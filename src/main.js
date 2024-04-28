@@ -3,6 +3,7 @@ import { mapState } from 'vuex'
 import uView from '@/uni_modules/uview-ui'
 
 import App from './App'
+// import './uni.promisify.adaptor'
 import store from './store'
 
 Vue.config.productionTip = false
