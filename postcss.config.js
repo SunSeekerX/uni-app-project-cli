@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+
 const config = {
   parser: require('postcss-comment'),
   plugins: [
@@ -15,9 +16,21 @@ const config = {
         return id
       },
     }),
+    require('tailwindcss')({ config: './tailwind.config.js' }),
+    // rem 转 rpx
+    // WeappTailwindcssDisabled
+    //   ? undefined
+    //   : require('postcss-rem-to-responsive-pixel')({
+    //       rootValue: 32,
+    //       propList: ['*'],
+    //       transformUnit: 'rpx'
+    //     }),
+
     require('autoprefixer')({
       remove: process.env.UNI_PLATFORM !== 'h5',
     }),
+    require('tailwindcss')({ config: './tailwind.config.js' }),
+    require('weapp-tailwindcss/css-macro/postcss'),
     require('@dcloudio/vue-cli-plugin-uni/packages/postcss'),
   ],
 }

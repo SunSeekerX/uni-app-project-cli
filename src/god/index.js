@@ -35,12 +35,10 @@ export const envs = {
 }
 export const getEnv = (key) => {
   const val = envs?.[env.appEnv]?.[key]
-  if (![null, undefined].includes(val)) {
-    return val
-  } else {
+  if (val == null) {
     console.error(`ENV: Cannot get the ${key} value!`)
-    return null
   }
+  return val
 }
 
 // I18n
